@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+*.sdf
+*.csv
+*.zip
+
+.virtual_documents/
+
 # Distribution / packaging
 .Python
 build/
