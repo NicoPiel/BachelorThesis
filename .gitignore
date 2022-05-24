@@ -9,6 +9,9 @@ __pycache__/
 *.sdf
 *.csv
 *.zip
+*.ac
+*.ac0
+*.inf
 
 .virtual_documents/
 
