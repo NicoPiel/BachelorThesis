@@ -9,5 +9,5 @@
 mamba init
 mamba activate mm
 
-jupyter nbconvert --to script preprocessing_rd.ipynb
-srun python3 preprocessing_rd.py
+jupyter nbconvert --to script preprocessing_gcn.ipynb
+srun python3 preprocessing_gcn.py

@@ -1,6 +1,7 @@
 name: mm
 channels:
   - pytorch
+  - dglteam
   - rapidsai
   - conda-forge
   - bioconda
@@ -12,9 +13,9 @@ dependencies:
   - _r-mutex=1.0.1
   - _sysroot_linux-64_curr_repodata_hack=3
   - abseil-cpp=20211102.0
-  - absl-py=1.2.0
+  - absl-py=1.3.0
   - acpype=2022.7.21
-  - aiohttp=3.8.1
+  - aiohttp=3.8.3
   - aiosignal=1.2.0
   - alembic=1.8.1
   - alsa-lib=1.2.7.2
@@ -26,7 +27,7 @@ dependencies:
   - arpack=3.7.0
   - arrow-cpp=6.0.1
   - arrow-cpp-proc=3.0.0
-  - astroid=2.12.9
+  - astroid=2.12.10
   - asttokens=2.0.8
   - async-timeout=4.0.2
   - attrs=22.1.0
@@ -51,12 +52,12 @@ dependencies:
   - blas=2.116
   - blas-devel=3.9.0
   - bleach=5.0.1
-  - blinker=1.4
+  - blinker=1.5
   - bokeh=2.4.3
   - boost=1.74.0
   - boost-cpp=1.74.0
-  - boto3=1.24.72
-  - botocore=1.27.72
+  - boto3=1.24.91
+  - botocore=1.27.91
   - bravado=11.0.3
   - bravado-core=5.17.1
   - brotli=1.0.9
@@ -66,10 +67,10 @@ dependencies:
   - bzip2=1.0.8
   - c-ares=1.18.1
   - c-compiler=1.5.0
-  - ca-certificates=2022.9.14
+  - ca-certificates=2022.9.24
   - cachetools=5.2.0
   - cairo=1.16.0
-  - certifi=2022.9.14
+  - certifi=2022.9.24
   - cffi=1.15.1
   - charset-normalizer=2.1.1
   - click=8.1.3
@@ -81,13 +82,14 @@ dependencies:
   - colorama=0.4.5
   - colorlog=6.7.0
   - compilers=1.5.0
-  - cryptography=37.0.4
+  - contourpy=1.0.5
+  - cryptography=38.0.2
   - cuda-python=11.7.1
   - cudatoolkit=11.7.0
   - cudf=22.04.00
   - cudnn=8.4.1.50
   - cupy=10.6.0
-  - curl=7.83.1
+  - curl=7.85.0
   - cxx-compiler=1.5.0
   - cycler=0.11.0
   - cython=0.29.32
@@ -96,19 +98,21 @@ dependencies:
   - dask-core=2022.6.1
   - dask-labextension=5.3.0
   - dataclasses=0.8
-  - datamol=0.7.13
+  - datamol=0.7.17
   - dbus=1.13.6
   - debugpy=1.6.3
   - decorator=5.1.1
   - deepchem=2.6.1
   - defusedxml=0.7.1
+  - dgl-cuda11.6=0.9.1
+  - dgllife=0.3.0
   - dill=0.3.5.1
   - distributed=2022.6.1
   - dlpack=0.5
   - docker-pycreds=0.4.0
   - entrypoints=0.4
-  - executing=1.0.0
-  - expat=2.4.8
+  - executing=1.1.1
+  - expat=2.4.9
   - fastavro=1.6.1
   - fastrlock=0.8
   - fftw=3.3.10
@@ -121,7 +125,7 @@ dependencies:
   - fontconfig=2.14.0
   - fonts-conda-ecosystem=1
   - fonts-conda-forge=1
-  - fonttools=4.37.1
+  - fonttools=4.37.4
   - fortran-compiler=1.5.0
   - freetype=2.12.1
   - fribidi=1.0.10
@@ -131,18 +135,18 @@ dependencies:
   - gcc=10.4.0
   - gcc_impl_linux-64=10.4.0
   - gcc_linux-64=10.4.0
-  - gettext=0.19.8.1
+  - gettext=0.21.1
   - gflags=2.2.2
   - gfortran=10.4.0
   - gfortran_impl_linux-64=10.4.0
   - gfortran_linux-64=10.4.0
   - giflib=5.2.1
   - gitdb=4.0.9
-  - gitpython=3.1.27
-  - glib=2.72.1
-  - glib-tools=2.72.1
+  - gitpython=3.1.29
+  - glib=2.74.0
+  - glib-tools=2.74.0
   - glog=0.6.0
-  - google-auth=2.11.0
+  - google-auth=2.12.0
   - google-auth-oauthlib=0.4.6
   - graphite2=1.3.13
   - greenlet=1.1.3
@@ -158,13 +162,14 @@ dependencies:
   - hdf4=4.2.15
   - hdf5=1.12.2
   - heapdict=1.0.1
+  - hyperopt=0.2.7
   - icu=69.1
-  - idna=3.3
+  - idna=3.4
   - importlib-metadata=4.11.4
   - importlib_metadata=4.11.4
-  - importlib_resources=5.9.0
+  - importlib_resources=5.10.0
   - intel-openmp=2022.0.1
-  - ipykernel=6.15.3
+  - ipykernel=6.16.0
   - ipython=8.5.0
   - ipython_genutils=0.2.0
   - ipywidgets=8.0.2
@@ -173,21 +178,22 @@ dependencies:
   - jedi=0.18.1
   - jinja2=3.1.2
   - jmespath=1.0.1
-  - joblib=1.1.0
+  - joblib=1.2.0
   - jpeg=9e
   - json5=0.9.5
   - jsonref=0.2
+  - jsonschema=4.16.0
   - jupyter=1.0.0
   - jupyter-lsp=1.5.1
   - jupyter-server-proxy=3.2.2
-  - jupyter_client=7.3.5
+  - jupyter_client=7.4.2
   - jupyter_console=6.4.4
   - jupyter_core=4.11.1
-  - jupyter_server=1.18.1
-  - jupyterlab=3.4.7
+  - jupyter_server=1.21.0
+  - jupyterlab=3.4.8
   - jupyterlab-lsp=3.10.2
   - jupyterlab_pygments=0.2.2
-  - jupyterlab_server=2.15.1
+  - jupyterlab_server=2.16.0
   - jupyterlab_widgets=3.0.3
   - kernel-headers_linux-64=3.10.0
   - keyutils=1.6.1
@@ -205,7 +211,7 @@ dependencies:
   - libcblas=3.9.0
   - libclang=13.0.1
   - libcudf=22.04.00
-  - libcurl=7.83.1
+  - libcurl=7.85.0
   - libdeflate=1.14
   - libedit=3.1.20191231
   - libev=4.33
@@ -215,9 +221,9 @@ dependencies:
   - libgcc-ng=12.1.0
   - libgfortran-ng=12.1.0
   - libgfortran5=12.1.0
-  - libglib=2.72.1
+  - libglib=2.74.0
   - libgomp=12.1.0
-  - libiconv=1.16
+  - libiconv=1.17
   - liblapack=3.9.0
   - liblapacke=3.9.0
   - libllvm11=11.1.0
@@ -228,13 +234,13 @@ dependencies:
   - libogg=1.3.4
   - libopenblas=0.3.21
   - libopus=1.3.1
-  - libpng=1.6.37
+  - libpng=1.6.38
   - libpq=14.5
   - libprotobuf=3.20.1
   - librmm=22.04.01
   - libsanitizer=10.4.0
   - libsodium=1.0.18
-  - libsqlite=3.39.3
+  - libsqlite=3.39.4
   - libssh2=1.10.0
   - libstdcxx-devel_linux-64=10.4.0
   - libstdcxx-ng=12.1.0
@@ -251,9 +257,9 @@ dependencies:
   - libxml2=2.9.12
   - libxslt=1.1.33
   - libzip=1.9.2
-  - libzlib=1.2.12
+  - libzlib=1.2.13
   - llvm-openmp=14.0.4
-  - llvmlite=0.38.1
+  - llvmlite=0.39.1
   - locket=1.0.0
   - loguru=0.6.0
   - lxml=4.8.0
@@ -261,11 +267,11 @@ dependencies:
   - lz4-c=1.9.3
   - magma=2.5.4
   - make=4.3
-  - mako=1.2.2
+  - mako=1.2.3
   - markdown=3.4.1
   - markupsafe=2.1.1
-  - matplotlib=3.5.3
-  - matplotlib-base=3.5.3
+  - matplotlib=3.6.1
+  - matplotlib-base=3.6.1
   - matplotlib-inline=0.1.6
   - mccabe=0.6.1
   - mistune=2.0.4
@@ -277,21 +283,21 @@ dependencies:
   - multidict=6.0.2
   - multisplitby=0.0.1
   - munkres=1.1.4
-  - mysql-common=8.0.30
-  - mysql-libs=8.0.30
-  - nbclassic=0.4.3
-  - nbclient=0.6.8
-  - nbconvert=7.0.0
-  - nbconvert-core=7.0.0
-  - nbconvert-pandoc=7.0.0
-  - nbformat=5.5.0
+  - mysql-common=8.0.31
+  - mysql-libs=8.0.31
+  - nbclassic=0.4.6
+  - nbclient=0.7.0
+  - nbconvert=7.2.1
+  - nbconvert-core=7.2.1
+  - nbconvert-pandoc=7.2.1
+  - nbformat=5.7.0
   - nccl=2.14.3.1
   - ncurses=6.3
   - neptune-client=0.16.5
   - neptune-notebooks=0.9.3
-  - nest-asyncio=1.5.5
+  - nest-asyncio=1.5.6
   - netcdf-fortran=4.6.0
-  - networkx=2.8.6
+  - networkx=2.8.7
   - ninja=1.11.0
   - nltk=3.6.7
   - nodejs=17.8.0
@@ -299,8 +305,8 @@ dependencies:
   - notebook-shim=0.1.0
   - nspr=4.32
   - nss=3.78
-  - numba=0.55.2
-  - numpy=1.22.4
+  - numba=0.56.3
+  - numpy=1.23.3
   - nvtx=0.2.3
   - oauthlib=3.2.1
   - ocl-icd=2.3.1
@@ -309,7 +315,7 @@ dependencies:
   - openjpeg=2.5.0
   - openmm=7.7.0
   - openssl=1.1.1q
-  - optuna=3.0.1
+  - optuna=3.0.3
   - orc=1.7.4
   - packaging=21.3
   - packmol=20.010
@@ -320,10 +326,10 @@ dependencies:
   - parquet-cpp=1.5.1
   - parso=0.8.3
   - partd=1.3.0
-  - path=16.4.0
+  - path=16.5.0
   - path.py=12.5.0
   - pathtools=0.1.2
-  - patsy=0.5.2
+  - patsy=0.5.3
   - pbr=5.10.0
   - pcre=8.45
   - pcre2=10.37
@@ -331,13 +337,13 @@ dependencies:
   - pexpect=4.8.0
   - pickleshare=0.7.5
   - pillow=9.2.0
-  - pip=22.2.2
+  - pip=22.3
   - pixman=0.40.0
   - pkgutil-resolve-name=1.3.10
   - platformdirs=2.5.2
   - pluggy=1.0.0
   - prettytable=3.4.1
-  - prometheus_client=0.14.1
+  - prometheus_client=0.15.0
   - promise=2.3
   - prompt-toolkit=3.0.31
   - prompt_toolkit=3.0.31
@@ -347,6 +353,7 @@ dependencies:
   - ptxcompiler=0.6.1
   - ptyprocess=0.7.0
   - pure_eval=0.2.2
+  - py4j=0.10.9.7
   - pyarrow=6.0.1
   - pyasn1=0.4.8
   - pyasn1-modules=0.2.7
@@ -354,12 +361,13 @@ dependencies:
   - pycairo=1.21.0
   - pycodestyle=2.8.0
   - pycparser=2.21
+  - pydantic=1.10.2
   - pydocstyle=6.1.1
   - pyflakes=2.4.0
   - pygments=2.13.0
-  - pyjwt=2.4.0
-  - pylint=2.15.2
-  - pyopenssl=22.0.0
+  - pyjwt=2.5.0
+  - pylint=2.15.3
+  - pyopenssl=22.1.0
   - pyparsing=3.0.9
   - pyperclip=1.8.2
   - pyqt=5.12.3
@@ -371,40 +379,41 @@ dependencies:
   - pysocks=1.7.1
   - python=3.9.13
   - python-dateutil=2.8.2
-  - python-fastjsonschema=2.16.1
+  - python-fastjsonschema=2.16.2
   - python-lsp-jsonrpc=1.0.0
   - python-lsp-server=1.5.0
+  - python-lsp-server-base=1.5.0
   - python_abi=3.9
   - pytoolconfig=1.2.2
   - pytorch=1.11.0
   - pytorch-mutex=1.0
-  - pytz=2022.2.1
+  - pytz=2022.4
   - pyu2f=0.1.5
-  - pyzmq=23.2.1
+  - pyzmq=24.0.1
   - qt=5.12.9
   - qtconsole=5.3.2
   - qtconsole-base=5.3.2
-  - qtpy=2.2.0
+  - qtpy=2.2.1
   - r-askpass=1.1
   - r-backports=1.4.1
   - r-base=4.1.3
   - r-base64enc=0.1_3
-  - r-brew=1.0_7
+  - r-brew=1.0_8
   - r-brio=1.1.3
   - r-callr=3.7.2
-  - r-cli=3.4.0
+  - r-cli=3.4.1
   - r-codetools=0.2_18
   - r-collections=0.3.5
-  - r-commonmark=1.8.0
-  - r-cpp11=0.4.2
-  - r-crayon=1.5.1
-  - r-curl=4.3.2
+  - r-commonmark=1.8.1
+  - r-cpp11=0.4.3
+  - r-crayon=1.5.2
+  - r-curl=4.3.3
   - r-cyclocomp=1.1.0
   - r-desc=1.4.2
   - r-diffobj=0.3.5
   - r-digest=0.6.29
   - r-ellipsis=0.3.2
-  - r-evaluate=0.16
+  - r-evaluate=0.17
   - r-fansi=1.0.3
   - r-fastmap=1.1.0
   - r-fs=1.5.2
@@ -412,22 +421,22 @@ dependencies:
   - r-highr=0.9
   - r-htmltools=0.5.3
   - r-httr=1.4.4
-  - r-jsonlite=1.8.0
+  - r-jsonlite=1.8.2
   - r-knitr=1.40
-  - r-languageserver=0.3.13
+  - r-languageserver=0.3.14
   - r-lazyeval=0.2.2
-  - r-lifecycle=1.0.2
+  - r-lifecycle=1.0.3
   - r-lintr=3.0.1
   - r-magrittr=2.0.3
   - r-mime=0.12
-  - r-openssl=2.0.2
+  - r-openssl=2.0.3
   - r-pillar=1.8.1
   - r-pkgconfig=2.0.3
   - r-pkgload=1.3.0
   - r-praise=1.0.0
   - r-processx=3.7.0
   - r-ps=1.7.1
-  - r-purrr=0.3.4
+  - r-purrr=0.3.5
   - r-r.cache=0.16.0
   - r-r.methodss3=1.8.2
   - r-r.oo=1.25.0
@@ -438,7 +447,7 @@ dependencies:
   - r-remotes=2.4.2
   - r-repr=1.1.4
   - r-rex=1.2.1
-  - r-rlang=1.0.5
+  - r-rlang=1.0.6
   - r-roxygen2=7.2.1
   - r-rprojroot=2.0.3
   - r-rstudioapi=0.14
@@ -447,10 +456,10 @@ dependencies:
   - r-stringr=1.4.1
   - r-styler=1.7.0
   - r-sys=3.4
-  - r-testthat=3.1.4
+  - r-testthat=3.1.5
   - r-tibble=3.1.8
   - r-utf8=1.2.2
-  - r-vctrs=0.4.1
+  - r-vctrs=0.4.2
   - r-waldo=0.4.0
   - r-withr=2.5.0
   - r-xfun=0.33
@@ -477,9 +486,9 @@ dependencies:
   - sed=4.8
   - selfies=2.1.1
   - send2trash=1.8.0
-  - sentry-sdk=1.9.8
+  - sentry-sdk=1.9.10
   - setproctitle=1.3.2
-  - setuptools=59.8.0
+  - setuptools=65.5.0
   - shortuuid=1.0.9
   - simpervisor=0.4
   - simplejson=3.17.6
@@ -493,18 +502,18 @@ dependencies:
   - soupsieve=2.3.2.post1
   - spdlog=1.10.0
   - sqlalchemy=1.4.41
-  - sqlite=3.39.3
-  - stack_data=0.5.0
+  - sqlite=3.39.4
+  - stack_data=0.5.1
   - statsmodels=0.13.2
-  - stevedore=4.0.0
+  - stevedore=4.0.1
   - swagger-spec-validator=2.7.6
   - sysroot_linux-64=2.17
-  - tbb=2021.5.0
+  - tbb=2021.6.0
   - tblib=1.7.0
-  - tensorboard=2.10.0
+  - tensorboard=2.10.1
   - tensorboard-data-server=0.6.0
   - tensorboard-plugin-wit=1.8.1
-  - terminado=0.15.0
+  - terminado=0.16.0
   - threadpoolctl=3.1.0
   - thrust=1.16.0
   - tinycss2=1.1.1
@@ -512,18 +521,18 @@ dependencies:
   - tktable=2.10
   - toml=0.10.2
   - tomli=2.0.1
-  - tomlkit=0.11.4
+  - tomlkit=0.11.5
   - toolz=0.12.0
-  - torchmetrics=0.9.3
+  - torchmetrics=0.10.0
   - torchtext=0.12.0
   - tornado=6.2
   - tqdm=4.64.1
   - traitlets=5.4.0
   - typing=3.10.0.0
-  - typing-extensions=4.3.0
-  - typing_extensions=4.3.0
-  - tzdata=2022c
-  - ujson=5.4.0
+  - typing-extensions=4.4.0
+  - typing_extensions=4.4.0
+  - tzdata=2022e
+  - ujson=5.5.0
   - unicodedata2=14.0.0
   - urllib3=1.26.11
   - wcwidth=0.2.5
@@ -552,8 +561,8 @@ dependencies:
   - yarl=1.7.2
   - zeromq=4.3.4
   - zict=2.2.0
-  - zipp=3.8.1
-  - zlib=1.2.12
+  - zipp=3.9.0
+  - zlib=1.2.13
   - zstd=1.5.2
   - pip:
     - amberlite==22.0
@@ -564,15 +573,16 @@ dependencies:
     - configparser==5.3.0
     - einops==0.3.0
     - jsonpointer==2.3
-    - jsonschema==3.2.0
     - jupyterlab-latex==3.1.0
     - mmpbsa-py==16.0
     - omegaconf==2.2.3
     - packmol-memgen==1.2.3rc0
+    - pandas==1.1.5
     - pdb4amber==22.0
     - plotly==4.14.3
     - pqdm==0.2.0
     - pydeprecate==0.3.0
+    - pytorch-lightning==1.3.6
     - pytorch-tabnet==3.0.0
     - pytorch-tabular==0.7.0
     - pytraj==2.0.6
@@ -582,6 +592,7 @@ dependencies:
     - sander==22.0
     - strict-rfc3339==0.7
     - subprocess32==3.5.4
+    - wandb==0.10.11
     - watchdog==2.1.9
     - webcolors==1.12
 prefix: /home/npiel2s/miniconda3/envs/mm
